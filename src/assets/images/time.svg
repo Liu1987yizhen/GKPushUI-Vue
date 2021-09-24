@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="409.216" height="45.21" viewBox="0 0 409.216 45.21">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0e9fff"/>
+      <stop offset="1" stop-color="#4dfff3"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect width="344.045" height="9" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="组_25" data-name="组 25" transform="translate(-1415 -51)">
+    <path id="路径_979" data-name="路径 979" d="M6.584,0H345.06c3.636,0,6.584,3.263,6.584,7.288s-2.948,7.288-6.584,7.288H6.584C2.948,14.577,0,11.314,0,7.288S2.948,0,6.584,0Z" transform="translate(1471.409 61.483)" fill="rgba(0,0,0,0.51)"/>
+    <path id="联合_3" data-name="联合 3" d="M13.685,43.051a22.42,22.42,0,0,1,0-41.29A22.4,22.4,0,0,1,38.248,38.248a22.429,22.429,0,0,1-24.564,4.8ZM2.24,22.406A20.165,20.165,0,1,0,22.406,2.24,20.188,20.188,0,0,0,2.24,22.406ZM39.471,43.555a1,1,0,0,1-.707-1.706l3.078-3.079a1,1,0,0,1,1.707.707v3.078a1,1,0,0,1-1,1Z" transform="translate(1415 51)" fill="url(#linear-gradient)"/>
+    <text id="_8" data-name="8" transform="translate(1425.528 80.448)" fill="#fff" font-size="22" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">8</tspan></text>
+    <g id="组_24" data-name="组 24" transform="translate(1479.228 51.54)">
+      <text id="_00:00" data-name="00:00" transform="translate(0 39.21)" fill="rgba(255,255,255,0.8)" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">00:00</tspan></text>
+      <text id="_06:00" data-name="06:00" transform="translate(69.707 39.302)" fill="rgba(255,255,255,0.8)" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">06:00</tspan></text>
+      <text id="_18:00" data-name="18:00" transform="translate(235.836 39.21)" fill="rgba(255,255,255,0.8)" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">18:00</tspan></text>
+      <text id="_12:00" data-name="12:00" transform="translate(154.766 40.67)" fill="rgba(255,255,255,0.8)" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">12:00</tspan></text>
+      <text id="_24:00" data-name="24:00" transform="translate(310.988 40.21)" fill="rgba(255,255,255,0.8)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">24:00</tspan></text>
+      <rect id="矩形_28" data-name="矩形 28" width="335.987" height="1.608" rx="0.804" transform="translate(0 12.807)" fill="rgba(255,255,255,0.6)"/>
+      <path id="多边形_6" data-name="多边形 6" d="M4.656,1.134a1,1,0,0,1,1.625,0L9.8,6.046a1,1,0,0,1-.813,1.583H1.947a1,1,0,0,1-.813-1.583Z" transform="translate(91.677 7.629) rotate(180)" fill="url(#linear-gradient)"/>
+      <g id="重复网格_11" data-name="重复网格 11" transform="translate(-0.058 15.496)" clip-path="url(#clip-path)">
+        <g id="组_23" data-name="组 23" transform="translate(-2551.942 -94.5)">
+          <circle id="椭圆_19" data-name="椭圆 19" cx="3" cy="3" r="3" transform="translate(2551.942 94.5)" fill="#fff"/>
+          <circle id="椭圆_18" data-name="椭圆 18" cx="2" cy="2" r="2" transform="translate(2621.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_20" data-name="椭圆 20" cx="2" cy="2" r="2" transform="translate(2580.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_21" data-name="椭圆 21" cx="2" cy="2" r="2" transform="translate(2594.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_22" data-name="椭圆 22" cx="2" cy="2" r="2" transform="translate(2607.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_23" data-name="椭圆 23" cx="2" cy="2" r="2" transform="translate(2567.942 95.5)" fill="#fff"/>
+        </g>
+        <g id="组_23-2" data-name="组 23" transform="translate(-2468.942 -94.5)">
+          <circle id="椭圆_19-2" data-name="椭圆 19" cx="3" cy="3" r="3" transform="translate(2551.942 94.5)" fill="#fff"/>
+          <circle id="椭圆_18-2" data-name="椭圆 18" cx="2" cy="2" r="2" transform="translate(2621.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_20-2" data-name="椭圆 20" cx="2" cy="2" r="2" transform="translate(2580.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_21-2" data-name="椭圆 21" cx="2" cy="2" r="2" transform="translate(2594.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_22-2" data-name="椭圆 22" cx="2" cy="2" r="2" transform="translate(2607.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_23-2" data-name="椭圆 23" cx="2" cy="2" r="2" transform="translate(2567.942 95.5)" fill="#fff"/>
+        </g>
+        <g id="组_23-3" data-name="组 23" transform="translate(-2385.942 -94.5)">
+          <circle id="椭圆_19-3" data-name="椭圆 19" cx="3" cy="3" r="3" transform="translate(2551.942 94.5)" fill="#fff"/>
+          <circle id="椭圆_18-3" data-name="椭圆 18" cx="2" cy="2" r="2" transform="translate(2621.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_20-3" data-name="椭圆 20" cx="2" cy="2" r="2" transform="translate(2580.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_21-3" data-name="椭圆 21" cx="2" cy="2" r="2" transform="translate(2594.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_22-3" data-name="椭圆 22" cx="2" cy="2" r="2" transform="translate(2607.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_23-3" data-name="椭圆 23" cx="2" cy="2" r="2" transform="translate(2567.942 95.5)" fill="#fff"/>
+        </g>
+        <g id="组_23-4" data-name="组 23" transform="translate(-2302.942 -94.5)">
+          <circle id="椭圆_19-4" data-name="椭圆 19" cx="3" cy="3" r="3" transform="translate(2551.942 94.5)" fill="#fff"/>
+          <circle id="椭圆_18-4" data-name="椭圆 18" cx="2" cy="2" r="2" transform="translate(2621.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_20-4" data-name="椭圆 20" cx="2" cy="2" r="2" transform="translate(2580.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_21-4" data-name="椭圆 21" cx="2" cy="2" r="2" transform="translate(2594.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_22-4" data-name="椭圆 22" cx="2" cy="2" r="2" transform="translate(2607.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_23-4" data-name="椭圆 23" cx="2" cy="2" r="2" transform="translate(2567.942 95.5)" fill="#fff"/>
+        </g>
+        <g id="组_23-5" data-name="组 23" transform="translate(-2219.942 -94.5)">
+          <circle id="椭圆_19-5" data-name="椭圆 19" cx="3" cy="3" r="3" transform="translate(2551.942 94.5)" fill="#fff"/>
+          <circle id="椭圆_18-5" data-name="椭圆 18" cx="2" cy="2" r="2" transform="translate(2621.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_20-5" data-name="椭圆 20" cx="2" cy="2" r="2" transform="translate(2580.942 95.5)" fill="#fff"/>
+          <circle id="椭圆_21-5" data-name="椭圆 21" cx="2" cy="2" r="2" transform="translate(2594.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_22-5" data-name="椭圆 22" cx="2" cy="2" r="2" transform="translate(2607.943 95.5)" fill="#fff"/>
+          <circle id="椭圆_23-5" data-name="椭圆 23" cx="2" cy="2" r="2" transform="translate(2567.942 95.5)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <text id="AM" transform="translate(1437.945 79.006)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI" letter-spacing="0.05em"><tspan x="0" y="0">AM</tspan></text>
+  </g>
+</svg>
