@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+#geoking_remote_player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#geoking_remote_statistics {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    background-color: rgba(167, 161, 161, 0.58);
+    padding: 10px;
+}
+
+button {
+    position: relative;
+}
+
+#camera-info {
+    color: white;
+    position: relative;
+}
+
+#obj-info {
+    color: white;
+    position: relative;
+}
+
+#info-tree {
+    position: relative;
+    width: 20%;
+}
+
+#ue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.test-btn {
+    position: relative;
+    z-index: 100;
+}

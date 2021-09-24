@@ -1,3 +1,8 @@
+
+const args = {}
+args.appname = "CIM基础平台"
+process.env.VUE_APP_ARGS = JSON.stringify(args)
+
 module.exports = {
     /** 区分打包环境与开发环境
      * process.env.NODE_ENV==='production'  (打包环境)

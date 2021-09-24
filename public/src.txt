@@ -1,0 +1,30 @@
+var cgs2000Ellipsolid = new Cesium.Ellipsoid(6378137.0, 6378137.0, 6356752.31414035585)
+    var myGeographicTilingScheme = new Cesium.GeographicTilingScheme({
+      ellipsoid: cgs2000Ellipsolid,
+      rectangle: Cesium.Rectangle.fromDegrees(-180, -90, 180, 90),
+      numberOfLevelZeroTilesX: 4,
+      numberOfLevelZeroTilesY: 2
+    })
+var esriWMTS = new Cesium.ArcGisMapServerImageryProvider({
+      url: 'http://Ip:6080/arcgis/rest/services/jssl_vector_L3_L17/MapServer',
+      layer: 'jssl_vector_L3_L17',
+      tilingScheme: myGeographicTilingScheme,
+      rectangle: myRectangle,
+      minimumLevel: 0,
+      ellipsoid: cgs2000Ellipsolid,
+      maximumLevel: 14
+    })
+ 
+var cgs2000GeographicProj = new Cesium.GeographicProjection(cgs2000Ellipsolid)
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+      animation: false,
+      geocoder: false,
+      timeline: false,
+      navigationHelpButton: false,
+      baseLayerPicker: false,
+      mapProjection: cgs2000GeographicProj,
+      imageryProvider: esriWMTS
+    })
+————————————————
+版权声明：本文为CSDN博主「飞瀑」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/feifei2211/article/details/93872868

@@ -14,6 +14,7 @@
     <Viewpoint v-if="headerActive.includes(7)"/>
     <POI v-if="headerActive.includes(8)"/>
     <Statistics v-if="headerActive.includes(11)"/>
+    <k-f-j-k ref="render" />
 </template>
 
 <script>
@@ -30,6 +31,7 @@
     import Viewpoint from "../components/Viewpoint";
     import POI from "../components/POI";
     import Statistics from "../components/Statistics";
+    import KFJK from "../components/3DRender"
 
     import {ref} from "vue";
 
@@ -48,6 +50,7 @@
             Viewpoint,
             POI,
             Statistics,
+            KFJK,
         },
         setup() {
             let headerActive = ref([]);

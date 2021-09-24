@@ -1,17 +1,133 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>重庆市全域空间三维数字底座</title>
-  </head>
-  <body>
+
+    <title>
+        <%= JSON.parse(process.env.VUE_APP_ARGS).appname %>
+    </title>
+    <link href="./animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Cesium/Widgets/widgets.css" />
+    <script src="./UE/lib/jquery-3.5.1.min.js"></script>
+    <script src="./Cesium/Cesium.js"></script>
+
+    <!--全局配置-->
+    <script>
+        window._CONFIG =
+        {
+            "dev": true,    //是否为开发环境，true|false
+            "config_dev": {
+                baseURL: "http://139.9.50.156:8001",
+                otherLogin: "http://23.36.123.84",
+                baseDataURL: "http://139.159.160.62:8080",
+                // baseDataURL: "http://139.9.50.156:8001/api/demo/getServiceTmp",
+                baseCommonSceneUrl: "http://139.159.160.62:10006/", // 常用场景基础地址
+                userGkUrl: 'http://139.159.160.62:9081/',
+                externalLinks: 'https://www.baidu.com/', // 开放接口外部链接地址
+                cesium:{
+                    maxCameraHeight:100000000,
+                    minCameraHeight:null
+                },
+                baseMap: {
+                    center: [106.48022766103406, 29.551812928932396],//默认视点106.391,29.641
+                    zoom: 3,//初始层级
+                    secret: true,//是否使用token
+                    apiJs: 'https://js.arcgis.com/3.31/',
+                    apiCss: 'https://js.arcgis.com/3.31/esri/css/esri.css',
+                    urls: [
+                        {
+                            id: 'bg_part1',
+                            url: 'http://113.207.113.10:8081/arcgis/rest/services/SQ_SYL/SQ_SYL_bg_20180510/MapServer',
+                            isTile: true,//是否切片
+                            enable: true //是否启用
+                        },
+                        {
+                            id: 'bg_part2',
+                            url: '',
+                            isTile: true,
+                            enable: false
+                        },
+                        {
+                            id: 'bg_part3',
+                            url: '',
+                            isTile: true,
+                            enable: false
+                        },
+                        {
+                            id: 'bg_part4',
+                            url: '',
+                            isTile: true,
+                            enable: false
+                        },
+                        {
+                            id: 'bg_xzqh',
+                            url: 'http://113.207.113.10:8081/arcgis/rest/services/SQ_SYL/community/MapServer',
+                            isTile: false,
+                            enable: true
+                        },
+                        {
+                            id: 'bg_jd',
+                            url: '',
+                            isTile: false,
+                            enable: false
+                        }
+                    ]
+                }
+            },
+            "config_online": {
+
+                baseURL: "http://23.36.41.131:8788",
+                otherLogin: "http://23.36.123.84",
+                baseDataURL: "http://23.36.41.133:8080/",
+                baseCommonSceneUrl: "http://23.36.41.131:9282", // 常用场景基础地址
+                userGkUrl: 'http://139.159.160.62:9081/',
+                externalLinks: 'http://23.36.41.131:9095/index.html', // 开放接口外部链接地址
+                cesium:{
+                    maxCameraHeight:100000,
+                    minCameraHeight:null
+                },
+                baseMap: {
+                    center: [107.601707, 30.160587],//默认视点  渝中区：106.550232,29.561571
+                    zoom: 1,//初始层级
+                    secret: false,//是否使用token
+                    apiJs: 'http://23.36.41.131:8787/arcgis_js_v321_api/init.js',
+                    apiCss: 'http://23.36.41.131:8787/arcgis_js_v321_api/esri/css/esri.css',
+                    urls: [
+                        {
+                            id: '重庆+主城切片',
+                            index: 2,
+                            url: 'http://23.36.41.131:6080/arcgis/rest/services/CIM/bg_cq_zc_tile/MapServer',
+                            isTile: true,
+                            enable: true
+                        },
+                        {
+                            id: '全国切片',
+                            index: 0,
+                            url: '	http://23.36.41.131:6080/arcgis/rest/services/CIM/bg_qg_dync/MapServer',
+                            isTile: false,
+                            enable: true
+                        },
+                    ]
+                }
+            }
+
+        };
+    </script>
+
+</head>
+
+<body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+                Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-  </body>
+</body>
+
 </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--<link rel="stylesheet" href="lib/dynatree/src/skin/ui.dynatree.css">-->
+
+    <!--<script src="lib/html5shiv.js"></script>-->
+    <script src="./lib/respond.min.js"></script>
+
+    <script src="./lib/jquery-3.5.1.min.js"></script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./lib/dynatree/jquery/jquery.cookie.js"></script>
+    <script src="./lib/dynatree/src/jquery.dynatree.js"></script>
+    <script src="lib/echarts.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./lib/ue/player.css">
+    <script type="text/javascript" src="./lib/ue/scripts/adapter-latest.js"></script>
+    <script type="text/javascript" src="./lib/ue/scripts/webRtcPlayer.js"></script>
+    <script type="text/javascript" src="./lib/ue/scripts/app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./lib/gk/GKRemotePlayer.css">
+    <script src="./lib/gk/GKRemotePlayer.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./lib/GKWebAPIFP.js"></script>
+<!--    <script src="./js/index.js"></script>-->
+
+    <title>GKWebPushDemo</title>
+  <style>
+    body,html,.gk-container {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+    <div id="gktips"
+        style="width:100%; height:100%;position:absolute; z-index: 1; text-align:center; padding:0; color:white;">
+    </div>
+    <!-- <div class="test-btn">
+    <div id="camera-info"></div>
+    <div id="obj-info"></div>
+    <div id="info-tree"></div>
+    <button onclick="flyTo('home')">home</button>
+    <button onclick="flyTo('qiao')">FlyToQiao</button>
+    <button onclick="setWeather(0)">设置天气（天晴）</button>
+    <button onclick="setWeather(6)">设置天气（下雨）</button>
+    <button onclick="setOpacity()">设置透明度</button>
+    <button onclick="setColor()">设置颜色</button>
+    <button onclick="setRotationLeft()">向左移动</button>
+    <button onclick="setRotationRight()">向右移动</button>
+    <button onclick="addCamChange()">注册相机改变事件</button>
+    <button onclick="removeCamChange()">注销相机改变事件</button>
+    <button onclick="startGetObj()">开始查询物体</button>
+    <button onclick="endGetObj()">结束查询物体</button>
+
+    <button onclick="setLayerVisble('JZ_1F_Map',true)">显示建筑</button>
+    <button onclick="setLayerVisble('JZ_1F_Map',false)">隐藏建筑</button>
+    <button onclick="setLayerVisble('JG_Topf',true)">显示结构</button>
+    <button onclick="setLayerVisble('JG_Topf',false)">隐藏结构</button>
+    <button onclick="setHotmapVisible(true)">显示热力图</button>
+    <button onclick="setHotmapVisible(false)">隐藏热力图</button>
+    <button onclick="MoveTo(0)">MoveTo0</button>
+    <button onclick="MoveTo(1)">MoveTo1</button>
+    <label>热力图值：</label>
+    <input type="range" id="range" min="0" max="1" value="1" step="0.1" oninput="setHotmapVal()"/>
+
+    <button onclick="openSection(true)">进入横向剖面模式</button>
+    <button onclick="openSection(false)">退出横向剖面模式</button>
+    <label>设置剖面高度插值：</label>
+    <input type="range" id="gdcz" min="0" max="1" value="1" step="0.1" oninput="setSectionHigh()"/>
+
+
+    <button onclick="setLayer('HC_BUI_MAP', true)">建筑</button>
+    <button onclick="setLayer('HC_BUI_MAP', false)">建筑2</button>
+    <button onclick="setLayer('HC_FLOOR_MAP', true)">地形</button>
+    <button onclick="setLayer('HC_FLOOR_MAP', false)">地形2</button>
+    <button onclick="setLayer('HC_SJ_NEI_MAP', true)">方案区实景</button>
+    <button onclick="setLayer('HC_SJ_NEI_MAP', false)">方案区实景2</button>
+    <button onclick="setLayer('HC_SJ_WAI_MAP', true)">外围实景</button>
+    <button onclick="setLayer('HC_SJ_WAI_MAP', false)">外围实景2</button>
+    <button onclick="setLayer('HC_TREE_MAP', true)">树</button>
+    <button onclick="setLayer('HC_TREE_MAP', false)">树2</button>
+
+
+    <button onclick="addData()">动态增加数据</button>
+    <button onclick="removeData()">动态移除数据</button>
+
+</div> -->
+    <div class="gk-container">
+        <div id="player"></div>
+        <div class="container" id="gkviewport"
+            style="width:100%; height:100%;position:absolute; padding:0px;">
+            <div id="center_div"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
