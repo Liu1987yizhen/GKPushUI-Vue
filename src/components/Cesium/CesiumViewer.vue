@@ -1,9 +1,9 @@
 <template>
   <div class="fullsize relative">
     <div :id="id" class="fullsize"></div>
-    <div :id="id + '_loadingOverlay'" class="loadingOverlay" v-if="loading">
-      <h1>Loading...</h1>
-    </div>
+    <!--<div :id="id + '_loadingOverlay'" class="loadingOverlay" v-if="loading">-->
+      <!--<h1>Loading...</h1>-->
+    <!--</div>-->
   </div>
 </template>
 
@@ -217,9 +217,9 @@ export default {
     helper.add(viewer.scene.globe.tileLoadProgressEvent, (e) => {
       e === 0 && (this.loading = false);
     });
-    this.$bus.$on("closeLoading", (type) => {
-      this.loading = type;
-    });
+    // this.$bus.$on("closeLoading", (type) => {
+    //   this.loading = type;
+    // });
   },
   beforeDestroy() {
     this.layerUtil && this.layerUtil.destroy();

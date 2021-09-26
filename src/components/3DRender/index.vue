@@ -1,4 +1,7 @@
 <template>
+    <button @click="switchEngine(1)">CC</button>
+    <button @click="switchEngine(2)">UE</button>
+    <button @click="switchEngine(3)">GK</button>
     <div class="content">
         <cesium-viewer ref="cesiumViewer"
                        v-if="enginetype === 1"/>
@@ -24,60 +27,63 @@
         data() {
             return {
                 // enginetype: "",
-                enginetype: 1,
+                enginetype: 3,
             }
         },
         watch: {
-            // enginetype: {
-            //     immediate: false,
-            //     handler(val) {
-            //         this.$nextTick(() => {
-            //             this.initIframeEngine()
-            //         })
-            //     }
-            // }
+            enginetype: {
+                immediate: false,
+                handler(val) {
+                    this.$nextTick(() => {
+                        this.initIframeEngine()
+                    })
+                }
+            }
         },
         methods: {
-            // initIframeEngine() {
-            //     this.$refs.ueiframe &&
-            //     (this.$refs.ueiframe.onload = () => {
-            //         // // iframe加载完成后你需要进行的操作
-            //         // this.loadNum++
-            //         this.initUe()
-            //         console.log("iframe loaded")
-            //     })
-            //     this.$refs.gkiframe &&
-            //     (this.$refs.gkiframe.onload = () => {
-            //         // iframe加载完成后你需要进行的操作
-            //         // this.loadNum++
-            //         this.initGk()
-            //         console.log("iframe loaded")
-            //     })
-            // },
-            // initUe() {
-            //     const iframeWindow = this.$refs.ueiframe.contentWindow
-            //     const ueConfig = this.engines.find((v) => v.enginetype === "UE")
-            //     // const gkConfig = this.engines.find(v => v.enginetype === 'GeoKing')
-            //     iframeWindow.UIConfig.bg_tpe = "ue"
-            //     iframeWindow.UIConfig.ue.url = ueConfig && ueConfig.engineurl
-            //     iframeWindow.WebAPIInstance = new iframeWindow.WebAPI()
-            //     iframeWindow.WebAPIInstance.Initialize()
-            //     this.UEWebAPI = iframeWindow.WebAPIInstance
-            // },
-            // initGk() {
-            //     const iframeWindow = this.$refs.gkiframe.contentWindow
-            //     // const ueConfig = this.engines.find(v => v.enginetype === 'UE')
-            //     const gkConfig = this.engines.find(
-            //         (v) => v.enginetype === "GeoKing"
-            //     )
-            //     iframeWindow.UIConfig.bg_tpe = "gk"
-            //     iframeWindow.UIConfig.gk.launcherArray = [
-            //         gkConfig && gkConfig.engineurl
-            //     ]
-            //     iframeWindow.WebAPIInstance = new iframeWindow.WebAPI()
-            //     iframeWindow.WebAPIInstance.Initialize()
-            //     this.GKWebAPI = iframeWindow.WebAPIInstance
-            // },
+            switchEngine(enginetype){
+                this.enginetype = enginetype;
+            },
+
+            initIframeEngine() {
+                this.$refs.ueiframe &&
+                (this.$refs.ueiframe.onload = () => {
+                    // // iframe加载完成后你需要进行的操作
+                    // this.loadNum++
+                    this.initUe()
+                    console.log("iframe loaded")
+                })
+                this.$refs.gkiframe &&
+                (this.$refs.gkiframe.onload = () => {
+                    // iframe加载完成后你需要进行的操作
+                    // this.loadNum++
+                    this.initGk()
+                    console.log("iframe loaded")
+                })
+            },
+            initUe() {
+                const iframeWindow = this.$refs.ueiframe.contentWindow
+                const ueConfig = {engineurl:'http://139.159.160.62:10006/'}
+                iframeWindow.UIConfig.bg_tpe = "ue"
+                iframeWindow.UIConfig.ue.url = ueConfig && ueConfig.engineurl
+                iframeWindow.WebAPIInstance = new iframeWindow.WebAPI()
+                iframeWindow.WebAPIInstance.Initialize()
+                this.UEWebAPI = iframeWindow.WebAPIInstance
+            },
+            initGk() {
+                const iframeWindow = this.$refs.gkiframe.contentWindow
+                // const gkConfig = this.engines.find(
+                //     (v) => v.enginetype === "GeoKing"
+                // )
+                iframeWindow.UIConfig.bg_tpe = "gk"
+                iframeWindow.UIConfig.gk.launcherArray = [
+                    // gkConfig && gkConfig.engineurl
+                    'http://139.9.50.156:9080/'
+                ]
+                iframeWindow.WebAPIInstance = new iframeWindow.WebAPI()
+                iframeWindow.WebAPIInstance.Initialize()
+                this.GKWebAPI = iframeWindow.WebAPIInstance
+            },
         }
     }
 
